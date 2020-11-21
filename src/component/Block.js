@@ -16,7 +16,7 @@ function Block(props) {
         
     </ul></p>
     <p>Launch Year : {launch_year}</p>
-    <p>Successfull Launch : {launch_success.toString()}</p>
+    <p>Successfull Launch : {(launch_success != null) ? launch_success.toString(): 'null'}</p>
     <p>Successfull Landing : {
                               (props.data.rocket.first_stage.cores[0].land_success != null) ?
                               props.data.rocket.first_stage.cores[0].land_success.toString()
